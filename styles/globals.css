@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Exo:wght@700&display=swap");
+
+:root {
+  --fontBody: "Cantarell", sans-serif;
+  --fontTitle: "Exo", sans-serif;
+  --bold: 700;
+  --normal: 400;
+
+  --sizeBase: 16px;
+  --sizeMedium: 1.125rem;
+  --sizeSmall: 0.75rem;
+  --sizeH1: 6.25rem;
+  --sizeH2: 3.75rem;
+  --sizeH3: 3rem;
+  --sizeH4: 2rem;
+  --sizeH5: 1.5rem;
+
+  --colorPrimary: #5928e5;
+  --colorSecondary: #fed9da;
+  --colorWhite: #ffffff;
+  --colorBlack: #111111;
+  --colorBlackAccent: rgba(0, 0, 0, 0.5);
+
+  --md: 1rem;
+  --sm: 0.5rem;
+  --xs: 0.25rem;
+
+  --lg: 1.5rem;
+  --xlg: 2rem;
+  --xxlg: 2.5rem;
+
+  --imageHeroW: 12.5rem;
+  --imageProjectW: 18.75rem;
+  --testimonioImageW: 5rem;
+
+  --gradientPrimary: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 27.41%,
+    var(--colorPrimary) 100%
+  );
+  --gradientSecondary: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 27.41%,
+    var(--colorSecondary) 100%
+  );
+
+  --borderPrimary: 1px solid var(--colorPrimary);
+  --borderSecondary: 1px solid var(--colorSecondary);
+
+  --shadowPrimary: 16px 16px 0 var(--colorPrimary);
+  --shadowSecondary: 16px 16px 0 var(--colorSecondary);
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --imageHeroW: 5rem;
+    --imageProjectW: 21.875rem;
+    --testimonioImageW: 8rem;
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fontBody);
+  font-weight: var(--normal);
+  font-size: var(--sizeBase);
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--fontTitle);
+  font-weight: var(--bold);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+svg {
+  width: 100%;
+  fill: currentColor;
+}
