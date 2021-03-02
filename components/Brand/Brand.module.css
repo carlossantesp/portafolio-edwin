@@ -1,0 +1,12 @@
+.logo {
+  font-family: var(--fontLogo);
+  font-weight: var(--bold);
+  font-size: inherit;
+  text-decoration: none;
+}
+.primary {
+  color: var(--colorPrimary);
+}
+.secondary {
+  color: var(--colorSecondary);
+}

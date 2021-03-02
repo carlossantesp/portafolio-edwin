@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Exo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Exo:wght@700&family=Roboto+Condensed:wght@700&display=swap");
 
 :root {
   --fontBody: "Cantarell", sans-serif;
   --fontTitle: "Exo", sans-serif;
+  --fontLogo: "Roboto Condensed", sans-serif;
   --bold: 700;
   --normal: 400;
 
@@ -98,4 +99,24 @@ img {
 svg {
   width: 100%;
   fill: currentColor;
+}
+
+.container {
+  padding-left: var(--md);
+  padding-right: var(--md);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: var(--lg);
+    padding-right: var(--lg);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: var(--xlg);
+    padding-right: var(--xlg);
+    max-width: 1300px;
+  }
 }

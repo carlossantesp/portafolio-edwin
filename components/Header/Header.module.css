@@ -1,0 +1,59 @@
+.header {
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+}
+.header > div {
+  display: grid;
+  grid-template-areas: "menu logo btn";
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding-top: var(--md);
+  padding-bottom: var(--md);
+}
+.menu {
+  grid-area: menu;
+  display: inline-block;
+  font-size: var(--lg);
+  margin-right: var(--md);
+}
+.brand {
+  grid-area: logo;
+  font-size: var(--sizeH5);
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 18rem;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--colorWhite);
+  padding: var(--lg);
+  transition: left 0.25s;
+}
+.active {
+  left: 0;
+}
+.btn {
+  grid-area: btn;
+}
+
+@media screen and (min-width: 992px) {
+  .header > div {
+    grid-template-areas: "logo navbar btn";
+    padding-top: var(--lg);
+    padding-bottom: var(--lg);
+  }
+  .menu {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    background-color: transparent;
+    grid-area: navbar;
+    position: initial;
+    width: initial;
+    height: auto;
+    z-index: initial;
+  }
+}
