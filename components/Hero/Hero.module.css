@@ -1,0 +1,59 @@
+.hero {
+  background-color: var(--colorSecondary);
+  padding: 3rem 0 8rem 0;
+}
+.hero > div {
+  display: grid;
+  grid-template-areas: "info" "services";
+  gap: var(--xxlg);
+}
+.info {
+  grid-area: info;
+  text-align: center;
+}
+.imageWrapper {
+  width: var(--imageHeroW);
+  height: var(--imageHeroW);
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid var(--colorPrimary);
+}
+.title {
+  font-size: var(--sizeH4);
+  color: var(--colorPrimary);
+  margin-top: 0;
+}
+.title span {
+  display: block;
+}
+.description {
+  font-size: var(--sizeMedium);
+  margin: 0;
+}
+.imageWrapper,
+.title {
+  margin-bottom: var(--xxlg);
+}
+.services {
+  grid-area: services;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--lg);
+  padding-top: var(--lg);
+}
+@media screen and (min-width: 768px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 2.3rem 0 8.3rem 0;
+  }
+  .imageWrapper {
+    border-width: 8px;
+  }
+  .title {
+    font-size: var(--sizeH1);
+  }
+}

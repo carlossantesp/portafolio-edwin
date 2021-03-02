@@ -32,7 +32,7 @@
   --xlg: 2rem;
   --xxlg: 2.5rem;
 
-  --imageHeroW: 12.5rem;
+  --imageHeroW: 5rem;
   --imageProjectW: 18.75rem;
   --testimonioImageW: 5rem;
 
@@ -55,7 +55,7 @@
 }
 @media screen and (min-width: 992px) {
   :root {
-    --imageHeroW: 5rem;
+    --imageHeroW: 12.5rem;
     --imageProjectW: 21.875rem;
     --testimonioImageW: 8rem;
   }

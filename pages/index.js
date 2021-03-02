@@ -1,7 +1,9 @@
 import Head from "next/head";
 import "normalize.css";
 import { useState } from "react";
+import { data, dataServices } from "../data/info";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header isOpen={isOpen} toggle={toggle} />
-
-      <h1>Portafolio Edwin</h1>
+      <main>
+        <Hero data={data} dataServices={dataServices} />
+      </main>
     </>
   );
 }

@@ -1,0 +1,29 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon {
+  display: inline-block;
+  color: var(--colorPrimary);
+  font-size: var(--xlg);
+  height: var(--xlg);
+}
+.description {
+  margin: 0;
+  margin-top: var(--lg);
+  font-size: var(--sizeH5);
+  font-family: var(--fontBody);
+  font-weight: var(--bold);
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: var(--md);
+  }
+}
+@media screen and (min-width: 992px) {
+  .description {
+    font-size: var(--lg);
+  }
+}
