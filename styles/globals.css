@@ -52,6 +52,7 @@
 
   --shadowPrimary: 16px 16px 0 var(--colorPrimary);
   --shadowSecondary: 16px 16px 0 var(--colorSecondary);
+  --shadowSecondaryAlt: -16px 16px 0 var(--colorSecondary);
 }
 @media screen and (min-width: 992px) {
   :root {

@@ -1,0 +1,114 @@
+.card {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "image" "box";
+  max-width: 21.875rem;
+  margin: auto;
+  position: relative;
+}
+.cardBox {
+  grid-area: box;
+  background-color: var(--colorSecondary);
+  box-shadow: var(--shadowPrimary);
+  margin-right: 1rem;
+  padding: 4rem var(--lg);
+}
+.imageWrapper {
+  grid-area: image;
+  position: relative;
+  margin-left: var(--lg);
+  margin-top: -2.5rem;
+  right: 0;
+  bottom: -2.5rem;
+}
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradientSecondary);
+}
+.title {
+  font-size: var(--sizeH4);
+  color: var(--colorPrimary);
+  margin: 0;
+  margin-bottom: var(--md);
+}
+.description {
+  font-size: var(--sizeMedium);
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: var(--md);
+}
+.bntWrapper {
+  display: grid;
+  grid-template-areas: "repo" "demo";
+  gap: var(--md);
+}
+.bntWrapper a:nth-child(1) {
+  grid-area: demo;
+}
+.bntWrapper a:nth-child(2) {
+  grid-area: repo;
+}
+.card:nth-child(2n) .cardBox {
+  color: var(--colorWhite);
+  background-color: var(--colorPrimary);
+  box-shadow: var(--shadowSecondary);
+}
+.card:nth-child(2n) .imageWrapper::after {
+  background: var(--gradientPrimary);
+}
+.card:nth-child(2n) .title {
+  color: var(--colorWhite);
+}
+.card:nth-child(2n) .bntWrapper a:nth-child(2) {
+  color: var(--colorSecondary);
+  border-color: var(--colorSecondary);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "image box";
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 5.5rem;
+  }
+  .cardBox {
+    max-width: 37.5rem;
+    margin-right: 0;
+    padding: 4rem 2.5rem 4rem 4.375rem;
+  }
+  .imageWrapper {
+    margin-left: -2.875rem;
+    margin-top: 0;
+    top: -5.5rem;
+    right: -2.875rem;
+    bottom: initial;
+  }
+  .bntWrapper {
+    grid-template-areas: "demo repo";
+    justify-content: flex-start;
+  }
+  .card:nth-child(2n) {
+    grid-template-areas: "box image";
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .card:nth-child(2n) .cardBox {
+    padding: 4rem 4.375rem 4rem 2.5rem;
+    box-shadow: var(--shadowSecondaryAlt);
+  }
+  .card:nth-child(2n) .imageWrapper {
+    right: initial;
+    bottom: initial;
+    left: -2.875rem;
+    margin-left: 0;
+    margin-right: -2.875rem;
+  }
+}

@@ -1,0 +1,20 @@
+.tabItem {
+  display: inline-block;
+  padding: 0.75rem var(--lg);
+  background-color: var(--colorWhite);
+  margin-right: var(--sm);
+  transition: background 0.25s;
+}
+.tabItem:last-child {
+  margin-right: 0;
+}
+.tabLink {
+  text-transform: capitalize;
+  font-weight: var(--bold);
+  color: var(--colorPrimary);
+  text-decoration: none;
+}
+.tabItem:hover,
+.active {
+  background-color: var(--colorSecondary);
+}

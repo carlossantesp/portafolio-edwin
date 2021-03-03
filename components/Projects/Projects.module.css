@@ -1,0 +1,35 @@
+.projects {
+  background-color: var(--colorWhite);
+  padding: var(--xxlg) 0 0;
+}
+.title {
+  text-align: center;
+  font-size: var(--sizeH4);
+  color: var(--colorPrimary);
+  margin: 0;
+  margin-bottom: var(--lg);
+}
+.tabsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.projectsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 992px) {
+  .projects {
+    padding-top: 5rem;
+  }
+  .title {
+    font-size: var(--sizeH1);
+    margin-bottom: var(--xxlg);
+  }
+}
