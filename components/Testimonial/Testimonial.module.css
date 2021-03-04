@@ -1,0 +1,51 @@
+.testimonialCard {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  position: relative;
+}
+.testimonialBox {
+  background-color: var(--colorSecondary);
+  box-shadow: var(--shadowPrimary);
+  padding: 4rem 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+.title {
+  font-size: var(--sizeH4);
+  margin: 0;
+}
+.description {
+  font-size: var(--sizeMedium);
+  line-height: 1.5;
+}
+.testimonialImg {
+  width: var(--testimonioImageW);
+  height: var(--testimonioImageW);
+  z-index: 1;
+  position: absolute;
+  top: -2.5rem;
+}
+.testimonialCard:nth-child(2n) .testimonialBox {
+  background-color: var(--colorPrimary);
+  box-shadow: var(--shadowSecondary);
+}
+.testimonialCard:nth-child(2n) .title,
+.testimonialCard:nth-child(2n) .description {
+  color: var(--colorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  .testimonialCard:last-child {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .testimonialBox {
+    padding-left: 4.375rem;
+    margin-left: 5rem;
+  }
+  .testimonialImg {
+    top: -3.125rem;
+  }
+}

@@ -1,0 +1,35 @@
+.testimonialSection {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.title {
+  text-align: center;
+  color: var(--colorPrimary);
+  font-size: var(--sizeH4);
+  margin-bottom: 5rem;
+}
+.testimonialWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonialWrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--xxlg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testimonialSection {
+    padding-bottom: 10rem;
+  }
+  .testimonialWrapper {
+    row-gap: 10rem;
+  }
+  .title {
+    font-size: var(--sizeH1);
+    margin-bottom: 6.25rem;
+  }
+}

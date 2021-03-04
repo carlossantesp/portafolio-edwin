@@ -1,10 +1,16 @@
 import Head from "next/head";
 import "normalize.css";
 import { useState } from "react";
-import { data, dataServices, dataProjects } from "../data/info";
+import {
+  data,
+  dataServices,
+  dataProjects,
+  dataTestimonals,
+} from "../data/info";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +28,7 @@ export default function Home() {
       <main>
         <Hero data={data} dataServices={dataServices} />
         <Projects dataProjects={dataProjects} />
+        <TestimonialsSection dataTestimonals={dataTestimonals} />
       </main>
     </>
   );

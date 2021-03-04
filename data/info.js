@@ -54,3 +54,34 @@ export const dataProjects = [
     active: false,
   },
 ];
+
+export const dataTestimonals = [
+  {
+    id: 1,
+    name: "Agustin",
+    description:
+      "Tengo algunos años trabajando con Javascript y aún así aprendí varias cosas importantes de Edwyn y como utiliza Javascript en el día a día.",
+    imageUrl: "images/testimonials/1.png",
+  },
+  {
+    id: 2,
+    name: "Aritz",
+    description:
+      "Me gusto ver el porqué de las cosas del core de React, saber la magia que ocurre por detrás, excelente profesor Edwyn gran vocación.",
+    imageUrl: "images/testimonials/2.png",
+  },
+  {
+    id: 3,
+    name: "Jose Enrique",
+    description:
+      "La forma como explica y trabaja los temas Edwyn, me ha ayudado a comprender y sacarle el mayor provecho a HTML y CSS. ",
+    imageUrl: "images/testimonials/4.png",
+  },
+  {
+    id: 4,
+    name: "Victoriano",
+    description:
+      "Ayuda a entender el porqué de las cosas, lo cual nos da el poder de aprovechar mejor el lenguaje y las herramientas que tenemos.",
+    imageUrl: "images/testimonials/3.png",
+  },
+];
