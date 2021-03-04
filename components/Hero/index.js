@@ -5,7 +5,7 @@ import styles from "./Hero.module.css";
 export default function Hero({ data, dataServices }) {
   const { name, resume, imageUrl } = data;
   return (
-    <section className={styles.hero}>
+    <section id="hola" className={styles.hero}>
       <Wrapper>
         <div className={styles.info}>
           <div className={styles.imageWrapper}>

@@ -3,6 +3,7 @@
   font-weight: var(--bold);
   font-size: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 .primary {
   color: var(--colorPrimary);

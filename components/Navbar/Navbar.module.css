@@ -18,6 +18,11 @@
   color: var(--colorBlackAccent);
   font-weight: var(--bold);
   text-decoration: none;
+  cursor: pointer;
+}
+.navbarLink:hover,
+.navbarLink.active {
+  color: var(--colorBlack);
 }
 
 @media screen and (min-width: 992px) {
@@ -37,7 +42,10 @@
     font-family: var(--fontBody);
     color: var(--colorPrimary);
     font-size: var(--sizeBase);
-    text-decoration: none;
+  }
+  .navbarLink:hover {
+    text-decoration: underline;
+    color: var(--colorPrimary);
   }
   .navbarItem:last-child {
     margin-right: 0;

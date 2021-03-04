@@ -13,6 +13,7 @@ import Projects from "../components/Projects";
 import TestimonialsSection from "../components/TestimonialsSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,20 +21,25 @@ export default function Home() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Head>
         <title>Portafolio Edwin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header isOpen={isOpen} toggle={toggle} />
+      <Header toggleHome={toggleHome} isOpen={isOpen} toggle={toggle} />
       <main>
         <Hero data={data} dataServices={dataServices} />
         <Projects dataProjects={dataProjects} />
         <TestimonialsSection dataTestimonals={dataTestimonals} />
         <Contact />
       </main>
-      <Footer socials={data.socials} />
+      <Footer toggleHome={toggleHome} socials={data.socials} />
     </>
   );
 }

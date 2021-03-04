@@ -4,7 +4,7 @@ import Social from "../Social";
 import { FaHeart } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
-export default function Footer({ socials }) {
+export default function Footer({ toggleHome, socials }) {
   const dateYear = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
@@ -18,7 +18,7 @@ export default function Footer({ socials }) {
           </ul>
         </div>
         <div className={styles.information}>
-          <Brand />
+          <Brand linkHref="home" toggleHome={toggleHome} />
           <div className={styles.copy}>
             <p>
               Hecho con <FaHeart /> de Edwyn.

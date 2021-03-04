@@ -6,7 +6,7 @@ import Button from "../Button";
 import styles from "./Header.module.css";
 import { FiMenu } from "react-icons/fi";
 
-export default function Header({ isOpen, toggle }) {
+export default function Header({ toggleHome, isOpen, toggle }) {
   const [resume, setResume] = useState("Currículum");
 
   useEffect(() => {
@@ -22,19 +22,19 @@ export default function Header({ isOpen, toggle }) {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header id="home" className={styles.header}>
       <Wrapper>
         <div className={styles.menu} onClick={toggle}>
           <FiMenu />
         </div>
         <div className={styles.brand}>
-          <Brand linkHref="/" primary={true} />
+          <Brand linkHref="home" primary={true} toggleHome={toggleHome} />
         </div>
         <nav
           className={`${styles.nav} ${isOpen ? styles.active : ""}`}
           onClick={toggle}
         >
-          <Navbar />
+          <Navbar toggleHome={toggleHome} toggle={toggle} />
         </nav>
         <div className={styles.btn}>
           <Button typeBtn="link" classBtn="primary">

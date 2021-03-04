@@ -5,7 +5,7 @@ import styles from "./Projects.module.css";
 
 export default function Projects({ dataProjects }) {
   return (
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <Wrapper>
         <h2 className={styles.title}>Proyectos</h2>
         <div className={styles.tabsList}>

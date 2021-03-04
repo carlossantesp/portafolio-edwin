@@ -4,7 +4,7 @@ import styles from "./TestimonialsSection.module.css";
 
 export default function TestimonialsSection({ dataTestimonals }) {
   return (
-    <section className={styles.testimonialSection}>
+    <section id="testimonials" className={styles.testimonialSection}>
       <Wrapper>
         <h2 className={styles.title}>Testimonials</h2>
         <div className={styles.testimonialWrapper}>

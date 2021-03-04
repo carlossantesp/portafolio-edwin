@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <Wrapper>
         <h2 className={styles.title}>Contacto</h2>
         <p className={styles.description}>
