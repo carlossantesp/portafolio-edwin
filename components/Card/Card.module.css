@@ -20,6 +20,8 @@
   margin-top: -2.5rem;
   right: 0;
   bottom: -2.5rem;
+  width: var(--imageProjectW);
+  height: var(--imageProjectW);
 }
 .imageWrapper::after {
   content: "";
