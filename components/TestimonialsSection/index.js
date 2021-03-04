@@ -6,7 +6,7 @@ export default function TestimonialsSection({ dataTestimonals }) {
   return (
     <section id="testimonials" className={styles.testimonialSection}>
       <Wrapper>
-        <h2 className={styles.title}>Testimonials</h2>
+        <h2 className={styles.title}>Testimonios</h2>
         <div className={styles.testimonialWrapper}>
           {dataTestimonals.map((testimonial) => (
             <Testimonial key={testimonial.id} testimonial={testimonial} />
