@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import TestimonialsSection from "../components/TestimonialsSection";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero data={data} dataServices={dataServices} />
         <Projects dataProjects={dataProjects} />
         <TestimonialsSection dataTestimonals={dataTestimonals} />
+        <Contact />
       </main>
     </>
   );

@@ -1,0 +1,46 @@
+.contact {
+  background-color: var(--colorSecondary);
+  text-align: center;
+  padding: 4rem 0;
+}
+.contact div {
+  max-width: 28.125rem;
+}
+.title {
+  font-size: var(--sizeH4);
+  color: var(--colorPrimary);
+  margin: 0;
+}
+.description {
+  font-size: var(--sizeMedium);
+  line-height: 1.5;
+}
+.title,
+.description,
+.contactControl {
+  margin-bottom: 1rem;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.contactControl {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+.contactControl:placeholder-shown {
+  color: var(--colorPrimary);
+  font-size: var(--sizeMedium);
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    padding: 5rem 0;
+  }
+  .title {
+    font-size: var(--sizeH3);
+  }
+}
