@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding-top: var(--xlg);
+}
+.item svg {
+  width: auto;
+  margin-right: var(--sm);
+}
+.link {
+  color: var(--colorWhite);
+  font-size: var(--sizeMedium);
+}

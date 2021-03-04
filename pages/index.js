@@ -12,6 +12,7 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import TestimonialsSection from "../components/TestimonialsSection";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function Home() {
         <TestimonialsSection dataTestimonals={dataTestimonals} />
         <Contact />
       </main>
+      <Footer socials={data.socials} />
     </>
   );
 }

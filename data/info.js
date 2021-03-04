@@ -3,6 +3,28 @@ export const data = {
   resume:
     "Developer que le encanta implementar diseños que  inspiran y atraen a las personas.",
   imageUrl: "images/person.png",
+  socials: [
+    {
+      icon: "email",
+      linkUrl: "mailto:edwyn@gmail.com",
+      name: "Correo electrónico",
+    },
+    {
+      icon: "phone",
+      linkUrl: "https://web.whatsapp.com",
+      name: "Teléfono",
+    },
+    {
+      icon: "instagram",
+      linkUrl: "https://instragram.com",
+      name: "Instagram",
+    },
+    {
+      icon: "twitter",
+      linkUrl: "https://twitter.com",
+      name: "Twitter",
+    },
+  ],
 };
 
 export const dataServices = [
